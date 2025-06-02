@@ -1,7 +1,9 @@
 :root {
     --primaryColor: #2D2D2D;
+    --primaryVarColor: #1E2C2A;
     --secondaryColor: #FFFFFF;
     --hoverColor: #FF6250;
+    --hoverBtnColor: #8FFFEC;
     --primaryFont: "Epilogue";
 }
 
@@ -79,8 +81,9 @@ body {
 .section__main--left {
     display: flex;
     flex-direction: column;
-    flex-basis: 55%;
+    flex-basis: 53%;
     margin-left: 48px;
+    height: 328px;
 }
 
 .section__main--header {
@@ -105,20 +108,26 @@ body {
 }
 
 .section__main--button {
-    padding: 24px 64px;
+    padding: 28px 64px;
     background-color: var(--primaryColor);
     width: 211px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     text-decoration: none;
     color: var(--secondaryColor);
     margin-top: 50px;
 }
 
+.section__main--button:hover {
+    color: var(--hoverBtnColor);
+    background-color: var(--primaryVarColor);
+}
+
 .section__main--right {
     display: flex;
     justify-content: center;
-    flex-basis: 45%;
+    flex-basis: 47%;
+    height: 360px;
 }
 
 .section__main--image {
@@ -131,8 +140,10 @@ body {
 
 .section__footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
+    padding: 42px 68px;
 }
 
 .section__footer img {
