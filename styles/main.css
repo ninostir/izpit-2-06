@@ -1,5 +1,55 @@
 :root {
     --primaryColor: #2D2D2D;
     --secondaryColor: #FFFFFF;
-    --primaryFont: "Epilogue", sans-serif;
+    --hoverColor: #FF6250;
+    --primaryFont: "Epilogue";
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--primaryFont), sans-serif;
+    color: var(--primaryColor);
+}
+
+.section__header {
+    display: flex;
+    justify-content: space-between;
+    height: 78px;
+}
+
+.container {
+    display: flex;
+    width: 1280px;
+    margin: auto;
+}
+
+.section__header--logo {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.section__header--navigation {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-right: 40px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.section__header--navigation a {
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+
+.section__header--navigation a:hover {
+    color: var(--hoverColor);
 }
