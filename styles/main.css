@@ -5,6 +5,10 @@
     --primaryFont: "Epilogue";
 }
 
+
+
+/* General */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -16,16 +20,23 @@ body {
     color: var(--primaryColor);
 }
 
-.section__header {
-    display: flex;
-    justify-content: space-between;
-    height: 78px;
-}
+
+
+/* Header Section */
+
+
 
 .container {
     display: flex;
     width: 1280px;
     margin: auto;
+}
+
+.section__header {
+    display: flex;
+    justify-content: space-between;
+    height: 78px;
+    margin-top: 24px;
 }
 
 .section__header--logo {
@@ -52,4 +63,64 @@ body {
 
 .section__header--navigation a:hover {
     color: var(--hoverColor);
+}
+
+
+
+/* Main Section */
+
+.section__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 42px;
+}
+
+.section__main--left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 55%;
+    margin-left: 48px;
+}
+
+.section__main--header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.section__main--subTitle {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.section__main--mainTitle {
+    font-weight: 600;
+    font-size: 68px;
+}
+
+.section__main--description {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.section__main--button {
+    padding: 24px 64px;
+    background-color: var(--primaryColor);
+    width: 211px;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--secondaryColor);
+    margin-top: 50px;
+}
+
+.section__main--right {
+    display: flex;
+    justify-content: center;
+    flex-basis: 45%;
+}
+
+.section__main--image {
+
 }
