@@ -124,3 +124,38 @@ body {
 .section__main--image {
 
 }
+
+
+
+/* Footer Section */
+
+.section__footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section__footer img {
+    width: initial;
+}
+
+.icon-Google {
+    height: 38px;
+}
+
+.icon-Nike {
+    height: 31px;
+}
+
+.icon-Samsung {
+    height: 17px;
+}
+
+.icon-Apple {
+    height: 47px;
+}
+
+.icon-Adidas {
+    height: 44px;
+}
+
